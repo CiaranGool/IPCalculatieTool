@@ -1,0 +1,11 @@
+C:\Users\Impact Presentation\source\repos\CalculatorTool\CalculatorTool\bin\Debug\CalculatorTool.exe.config
+C:\Users\Impact Presentation\source\repos\CalculatorTool\CalculatorTool\bin\Debug\CalculatorTool.exe
+C:\Users\Impact Presentation\source\repos\CalculatorTool\CalculatorTool\bin\Debug\CalculatorTool.pdb
+C:\Users\Impact Presentation\source\repos\CalculatorTool\CalculatorTool\obj\Debug\CalculatorTool.csproj.AssemblyReference.cache
+C:\Users\Impact Presentation\source\repos\CalculatorTool\CalculatorTool\obj\Debug\CalculatorTool.Form1.resources
+C:\Users\Impact Presentation\source\repos\CalculatorTool\CalculatorTool\obj\Debug\CalculatorTool.Properties.Resources.resources
+C:\Users\Impact Presentation\source\repos\CalculatorTool\CalculatorTool\obj\Debug\CalculatorTool.csproj.GenerateResource.cache
+C:\Users\Impact Presentation\source\repos\CalculatorTool\CalculatorTool\obj\Debug\CalculatorTool.csproj.CoreCompileInputs.cache
+C:\Users\Impact Presentation\source\repos\CalculatorTool\CalculatorTool\obj\Debug\CalculatorTool.exe
+C:\Users\Impact Presentation\source\repos\CalculatorTool\CalculatorTool\obj\Debug\CalculatorTool.pdb
+C:\Users\Impact Presentation\source\repos\CalculatorTool\CalculatorTool\obj\Debug\CalculatorTool.csproj.ResolveComReference.cache
