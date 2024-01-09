@@ -1,2 +1,2 @@
 # IPCalculatieTool
-Automatiseringstool voor de calculatie van opdracht voor Impact Presentations
+Automatiseringstool voor de calculatie van opdrachten voor Impact Presentations
