@@ -16,7 +16,7 @@ using Excel = Microsoft.Office.Interop.Excel;
 
 namespace CalculatorTool
 {
-    // Alle indelingen naar excel qua positie en opmaak aanpassen, klopt nu niet meer.
+    // latest version
     public partial class Form1 : Form
     {
         public Form1()
@@ -46,8 +46,24 @@ namespace CalculatorTool
         string Type_Klus, OrderNummer, Locatie, Temperatuur, Voorbereidingstijd;
         double WaardeOrderNummer, WaardeTemperatuur, WaardeVoorbereidingstijd;
 
+
+        private void btn_Hulp_Click(object sender, EventArgs e)
+        {
+            string Bericht = "Met behulp van de Automatiseringstool is het mogelijk om de kosten en verdiensten te berkenen, om vervolgens het winstmarge te kunnen bepalen." + "\n" + "\n" +
+                  "U dient de Invoer kosten van verwijdering, Invoer kosten van aanbreng of beide volledig in te vullen om een correcte berekening uit te voeren." + "\n" + "\n" +
+                  "Vervolgens moeten de eigenschappen van de klus gespecificeerd worden, en moeten de reiskosten worden ingevoerd." + "\n" + "\n" +
+                  "Tot slot is het nog mogelijk om de loon van de werknemers in te voeren voor nog een duidelijker overzicht op het winstmarge." + "\n" + "\n" +"\n" + "\n" +
+                  "Door op de knop berekenen te drukken is het mogelijk om een overzicht van alle gegevens te creëren in de tool zelf." + "\n" + "\n" +
+                  "Door op de knop exporteren te drukken is het mogelijk om een gedetailleerd overzicht in Excel te creëren.";
+            string Titel = "Uitleg voor het gebruik";
+
+            MessageBox.Show(Bericht, Titel);
+        }
+
         string Datum, Opmerkingen, RollenPoetspapier, ExtraBenodigdheden;
         double EindberekeningKosten, EindberekeningVerdiensten, EindberekeningWinst, WaardeRollenPoetspapier, WaardeExtraBenodigdheden;
+
+        #endregion
 
         private void txt_AanBreedte_TextChanged(object sender, EventArgs e)
         {
@@ -86,7 +102,7 @@ namespace CalculatorTool
             InvoerCheck(txt_OrderNummer, false);
         }
 
-        #endregion
+        
 
         //Private voids van alle textboxes en comboboxes KleurCheckers 
         #region priv voids
@@ -1223,8 +1239,8 @@ namespace CalculatorTool
             Aan_WerkurenPrijs = Aan_Prijs() * Aan_Waarde_Werkuren;
 
             WaardeReiskosten = Werknemers() * WaardeReistijd * WaardeReis_Vergoeding;
-            
-            
+
+
             lbl_TotaalVerwijderen.Text = "Totale kosten verwijderen: €" + WaardeTotaal;
             lbl_ResultaatVerOppervlakte.Text = "Totale oppervlakte (in m²): " + (WaardeAantal * WaardeOppervlakte);
 
@@ -1240,6 +1256,7 @@ namespace CalculatorTool
             lbl_ResultaatDuurOpdracht.Text = "Totale duur opdracht: " + (Aan_Waarde_Werkuren + Waarde_Ver_Werkuren);
             lbl_ResultaatWerkdagen.Text = "Geschat aantal werkdagen: " + ((Waarde_Ver_Werkuren + Aan_Waarde_Werkuren) / 8);
 
+            //Activatie labels na berekening
             lbl_TotaalVerwijderen.Visible = true;
             lbl_ResultaatVerOppervlakte.Visible = true;
 
@@ -1255,6 +1272,7 @@ namespace CalculatorTool
             lbl_ResultaatDuurOpdracht.Visible = true;
             lbl_ResultaatWerkdagen.Visible = true;
 
+            //Berekening eindkosten
             TotaleKosten();
 
             lbl_ResultaatKosten.Text = "Totale kosten: " + EindberekeningKosten;
@@ -1264,6 +1282,7 @@ namespace CalculatorTool
 
             lbl_ResultaatWinst.Text = "Totale winst: " + EindberekeningWinst;
 
+            //Activatie labels eindwaarden
             lbl_ResultaatVerdiensten.Visible = true;
             lbl_ResultaatKosten.Visible = true;
             lbl_ResultaatWinst.Visible = true;

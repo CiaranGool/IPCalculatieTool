@@ -156,6 +156,7 @@
             this.lbl_Voorbereidingstijd = new System.Windows.Forms.Label();
             this.txt_Voorbereidingstijd = new System.Windows.Forms.TextBox();
             this.pnl_Resultaat = new System.Windows.Forms.Panel();
+            this.btn_Hulp = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -1508,12 +1509,27 @@
             this.pnl_Resultaat.TabIndex = 119;
             this.pnl_Resultaat.Visible = false;
             // 
+            // btn_Hulp
+            // 
+            this.btn_Hulp.BackColor = System.Drawing.Color.DarkBlue;
+            this.btn_Hulp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Hulp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Hulp.ForeColor = System.Drawing.Color.White;
+            this.btn_Hulp.Location = new System.Drawing.Point(1789, 9);
+            this.btn_Hulp.Name = "btn_Hulp";
+            this.btn_Hulp.Size = new System.Drawing.Size(88, 26);
+            this.btn_Hulp.TabIndex = 120;
+            this.btn_Hulp.Text = "Hulp";
+            this.btn_Hulp.UseVisualStyleBackColor = false;
+            this.btn_Hulp.Click += new System.EventHandler(this.btn_Hulp_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1889, 762);
+            this.Controls.Add(this.btn_Hulp);
             this.Controls.Add(this.txt_Voorbereidingstijd);
             this.Controls.Add(this.lbl_Voorbereidingstijd);
             this.Controls.Add(this.txt_Temperatuur);
@@ -1733,6 +1749,7 @@
         private System.Windows.Forms.TextBox txt_AanHoogte;
         private System.Windows.Forms.Label lbl_AanHoogte;
         private System.Windows.Forms.Panel pnl_Resultaat;
+        private System.Windows.Forms.Button btn_Hulp;
     }
 }
 
